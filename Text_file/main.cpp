@@ -1,4 +1,4 @@
-#include <fstream>
+п»ї#include <fstream>
 #include <iostream>
 #include <conio.h>
 
@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-	//считывание файла
+	//СЃС‡РёС‚С‹РІР°РЅРёРµ С„Р°Р№Р»Р°
 
-	char buffer[100]; //буфер для считывания информации из файла
+	char buffer[100]; //Р±СѓС„РµСЂ РґР»СЏ СЃС‡РёС‚С‹РІР°РЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё РёР· С„Р°Р№Р»Р°
 	ifstream inputFile("E:\\temp\\test.txt");
 	if (inputFile.is_open())
 	{
@@ -20,8 +20,8 @@ int main()
 		inputFile.close();
 	}
 	cout << endl;
-	//демонстрация ate
-	//переводит указатель в конец файла
+	//РґРµРјРѕРЅСЃС‚СЂР°С†РёСЏ ate
+	//РїРµСЂРµРІРѕРґРёС‚ СѓРєР°Р·Р°С‚РµР»СЊ РІ РєРѕРЅРµС† С„Р°Р№Р»Р°
 	ifstream inputFileate("E:\\temp\\test.txt",ios_base::in|ios_base::ate);
 	if (inputFileate.is_open())
 	{
@@ -34,7 +34,7 @@ int main()
 	}
 
 	cout << endl;
-	//демонстрация app
+	//РґРµРјРѕРЅСЃС‚СЂР°С†РёСЏ app
 	fstream appFile("E:\\temp\\test.txt", ios_base::in | ios_base::out|ios_base::app);
 	if (appFile.is_open())
 	{
@@ -47,7 +47,7 @@ int main()
 		appFile.close();
 	}
 
-	//открыть файл, которого нет
+	//РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р», РєРѕС‚РѕСЂРѕРіРѕ РЅРµС‚
 	fstream emptFile("E:\\temp\\test.txt",ios_base::in|ios_base::out|ios_base::trunc);
 	if (emptFile.is_open())
 	{

@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <fstream>
 #include <conio.h>
 #include <cstdio>
@@ -29,7 +29,7 @@ int main()
 			fout.write(buffer, 1);
 			fout.close();
 		}
-		//удаление файла
+		//СѓРґР°Р»РµРЅРёРµ С„Р°Р№Р»Р°
 		//remove("E:\\temp\\test1.txt");
 	_getch();
 	return 0;
